@@ -1,0 +1,126 @@
+/* --- Global Styles --- */
+:root {
+    --primary-color: #ff0050; /* Vibrant Accent Color */
+    --background-dark: #121212; /* Dark, modern background */
+    --text-light: #f4f4f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* --- Header & Navigation --- */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: rgba(18, 18, 18, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #333; /* Modern subtle line */
+}
+
+.company-logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.navigation-menu a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navigation-menu a:hover {
+    color: var(--primary-color);
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    height: 90vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* Attractive background image/video yahan se lagayein */
+    background: url('hero-bg.jpg') no-repeat center center/cover; 
+    position: relative;
+    overflow: hidden; /* VFX effects ke liye */
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff3377;
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 0, 80, 0.4); /* Subtle glow effect */
+}
+
+/* --- Services Summary --- */
+.services-summary, .testimonials {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.service-cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service-card {
+    background-color: #202020;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: 1px solid #333;
+}
+
+.service-card:hover {
+    transform: translateY(-15px); /* VFX-style lift effect */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* --- Footer --- */
+.main-footer {
+    background-color: #0d0d0d;
+    padding: 40px 5%;
+    border-top: 5px solid var(--primary-color);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
