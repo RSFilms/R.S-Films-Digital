@@ -60,5 +60,45 @@
     </footer>
 
     <script src="script.js" defer></script>
+
+    <section class="contact-section">
+    <h1>Humse Sampark Karein</h1>
+    <p>Aapke sawaalon ka jawaab dene mein humein khushi hogi.</p>
+
+    <div class="contact-container">
+        <form action="/submit-form" method="POST" class="contact-form">
+            <label for="name">Naam:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Vishay:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Sandesh:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Sandesh Bhejein</button>
+        </form>
+
+        <div class="contact-info">
+            <h2>Humein Dhoondhein</h2>
+            <div class="info-item">
+                <strong><i class="fa fa-map-marker"></i> Pata:</strong>
+                <p>123, Sampark Marg, Sheher, Desh - 000000</p>
+            </div>
+            <div class="info-item">
+                <strong><i class="fa fa-phone"></i> Phone:</strong>
+                <p>+91 98765 43210</p>
+            </div>
+            <div class="info-item">
+                <strong><i class="fa fa-envelope"></i> Email:</strong>
+                <p>support@aapkiwebsite.com</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 </body>
 </html>
